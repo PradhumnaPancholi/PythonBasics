@@ -157,3 +157,40 @@ friends = ["Chandler", "Joey", "Pheobe", "Monica", "Ross", "Rachel"]
 
 for friend in friends:
     print(friend)
+
+# ----------------------------------------------------------------------------------------------------------------------
+# TRY - EXCEPT
+try:
+    number = int(input("Enter a number: "))
+    print(number)
+except ValueError as error:
+    print(error)
+# except:
+#     print("Invalid Input")
+# not giving any "type" of exception will cause into catching any error and that something a good dev shouldn't do.
+
+# ----------------------------------------------------------------------------------------------------------------------
+# Dealing with Files
+# this is most interesting part
+
+# you have 4 options while handling a file
+# 1. w  - write
+# 2. r  - read
+# 3. a  - append
+# 4. r+ - read & write
+
+# Reading a file
+friends_file = open("friends_list.txt", "r")
+print(friends_file.readlines())
+friends_file.close()
+
+# Writing a file
+central_perk_employees_file = open("central_perk_employees.text", "w")
+central_perk_employees_file.write("Gunther - Probably owner")
+central_perk_employees_file.close()
+# Note- writing on an existing file will end up overwriting a data, if you want to add data, use append
+
+# Appending  a file
+friends_file = open("friends_list.txt", "a")
+friends_file.write("\nMike - Pianist")
+
