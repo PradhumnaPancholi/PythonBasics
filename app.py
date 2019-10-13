@@ -56,3 +56,41 @@ print(patient_thing.capitalize() + " taught me patient")
 print(pain_thing.capitalize() + " taught me pain")
 
 # What I learned :- Basically to generate a meaningless madlib(actually meme) using python
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+# Arrays
+# ----------------------------------------------------------------------------------------------------------------------------------
+
+# one can store anything in array just like any other programming language
+heroes = ["iron man", "captain america", "wolverine", "doctor strange", "thor"]
+guardians = ["groot", "rocket", "star lord", "gamora", "mantis", "drax"]
+print(heroes)
+print(heroes[0])
+print(heroes[2:])
+print(heroes[2:4])
+
+heroes.extend(guardians)
+print(heroes)
+
+heroes.append("spider man")
+print(heroes)
+heroes.insert(4, "black widow")
+print(heroes)
+heroes.remove("gamora")
+print(heroes)
+heroes.count("iron man")
+print(heroes)
+heroes.pop()
+print(heroes)
+heroes.clear()
+print(heroes)
+
+
+#----------------------------------------------------------------------------------------------------------------------------------
+# Tuples
+# ------------------------------------------------------------------------------------------------------------------------------------
+
+coordinates = (23.767767676, 3.658)
+print(coordinates[0])
+
+# tuple is just way to store a list which is immutable - cannot be modified//
