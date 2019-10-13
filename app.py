@@ -17,9 +17,9 @@ user_name = input("Please enter your name: ")
 user_answer = input(user_name + ", Are you excited to learn Python? Y/N : ")
 
 # Example of Else If
-if user_answer == "y" or "Y":
+if user_answer == "y" or user_answer == "Y":
     print("Sounds great, let's go")
-elif user_answer == "n" or "N":
+elif user_answer == "n" or user_answer == "N":
     print("Well, your choice if you wanna quit")
 else:
     print("Not a valid input, pal")
@@ -94,3 +94,12 @@ coordinates = (23.767767676, 3.658)
 print(coordinates[0])
 
 # tuple is just way to store a list which is immutable - cannot be modified//
+
+
+#-----------------------------------------------------------------------------------------------------------------------
+# Functions
+
+def get_cube(num):
+    return num*num*num
+
+print(get_cube(3))
