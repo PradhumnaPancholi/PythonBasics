@@ -86,7 +86,7 @@ heroes.clear()
 print(heroes)
 
 
-#----------------------------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------------------------
 # Tuples
 # ------------------------------------------------------------------------------------------------------------------------------------
 
@@ -96,10 +96,64 @@ print(coordinates[0])
 # tuple is just way to store a list which is immutable - cannot be modified//
 
 
-#-----------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------
 # Functions
 
 def get_cube(num):
     return num*num*num
 
 print(get_cube(3))
+
+# functions just like any other programming languages
+
+# -----------------------------------------------------------------------------------------------------------------------
+# Dictionaries
+
+months_dictionary  = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May", # jokes on me
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+}
+
+print(months_dictionary.get("Oct"))
+print(months_dictionary["Oct"])
+
+# -----------------------------------------------------------------------------------------------------------------------
+# Loops
+
+# 1. While loop - built a simple guessing game
+
+secret_word = "theoffice"
+user_guess = ""
+guess_limit = 3
+guess_index = 0
+guesses_ran_out = False
+
+while user_guess != secret_word and not(guesses_ran_out):
+    if guess_index < guess_limit:
+        user_guess = input("Enter your guess: ")
+        guess_index += 1
+    else:
+        guesses_ran_out = True
+
+if guesses_ran_out:
+    print("Better luck next time")
+else:
+    print("You Won!!!")
+
+
+# 2. For Loop - just printing things off
+
+friends = ["Chandler", "Joey", "Pheobe", "Monica", "Ross", "Rachel"]
+
+for friend in friends:
+    print(friend)
