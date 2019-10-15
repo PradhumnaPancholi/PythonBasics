@@ -1,3 +1,7 @@
+from Post import Post
+from Car import Car
+from Bike import Bike
+
 # this is me trying to learn python
 # getting hang of syntax and basics quickly coz tutorials are boring and toooo basic
 # I hope this works out, I don't even know how to comment out things
@@ -194,3 +198,13 @@ central_perk_employees_file.close()
 friends_file = open("friends_list.txt", "a")
 friends_file.write("\nMike - Pianist")
 
+# ----------------------------------------------------------------------------------------------------------------------
+# classes and objects
+post1 = Post("Post1", "cksgfkdskhgjhdfsg", "Pradhumna Pancholi", "Test")
+print(post1.title)
+
+car1 = Car("Toyoto", "Corolla", "2015")
+print(car1.parking())
+
+bike1 = Bike("Yamaha", "R 1.5", "2012")
+print(bike1.parking())
